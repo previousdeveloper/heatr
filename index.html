@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Heatmaps</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body ng-app="heatr" ng-controller="heatCtrl as vm">
+<div id="floating-panel">
+
+    <button onclick="toggleHeatmap()">Toggle Heatmap</button>
+    <button onclick="changeGradient()">Change gradient</button>
+    <button onclick="changeRadius()">Change radius</button>
+    <button onclick="changeOpacity()">Change opacity</button>
+</div>
+<div id="map" ng-init="vm.initMap()"></div>
+
+<!--<script async defer-->
+<!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJnPNuySENKoYEv59hHSBfmTdxuavFezU&signed_in=true&libraries=visualization&callback=initMap">-->
+<!--</script>-->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.js">
+</script>
+
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?sensor=SET_TO_TRUE_OR_FALSE&signed_in=true&libraries=visualization&callback=initMap">
+</script>
+
+
+
+<script type="text/javascript" src="lib/app.js"></script>
+<script type="text/javascript" src="lib/heatr.controller.js"></script>
+<script type="text/javascript" src="lib/heatr.service.js"></script>
+
+
+</body>
+</html>
